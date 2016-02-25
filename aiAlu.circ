@@ -56,6 +56,42 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(140,100)" to="(170,100)"/>
+    <wire from="(220,90)" to="(250,90)"/>
+    <wire from="(220,180)" to="(250,180)"/>
+    <wire from="(160,70)" to="(250,70)"/>
+    <wire from="(220,90)" to="(220,100)"/>
+    <wire from="(230,150)" to="(230,160)"/>
+    <wire from="(170,100)" to="(220,100)"/>
+    <wire from="(140,70)" to="(160,70)"/>
+    <wire from="(170,180)" to="(190,180)"/>
+    <wire from="(230,160)" to="(250,160)"/>
+    <wire from="(160,70)" to="(160,150)"/>
+    <wire from="(170,100)" to="(170,180)"/>
+    <wire from="(160,150)" to="(230,150)"/>
+    <wire from="(290,80)" to="(360,80)"/>
+    <wire from="(290,170)" to="(360,170)"/>
+    <comp lib="3" loc="(269,55)" name="Text">
+      <a name="text" val="A + B"/>
+    </comp>
+    <comp loc="(270,80)" name="aiSum"/>
+    <comp loc="(270,170)" name="aiSum"/>
+    <comp lib="3" loc="(269,144)" name="Text">
+      <a name="text" val="A - B"/>
+    </comp>
+    <comp lib="0" loc="(140,70)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(260,100)" name="Ground"/>
+    <comp lib="0" loc="(140,100)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp loc="(220,180)" name="twoComplement"/>
+    <comp lib="0" loc="(260,190)" name="Ground"/>
   </circuit>
   <circuit name="aiLogic">
     <a name="circuit" val="aiLogic"/>
