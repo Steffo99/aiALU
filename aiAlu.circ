@@ -54,6 +54,27 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(120,100)" to="(180,100)"/>
+    <wire from="(180,90)" to="(240,90)"/>
+    <wire from="(180,90)" to="(180,100)"/>
+    <wire from="(120,70)" to="(240,70)"/>
+    <comp lib="0" loc="(120,100)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp loc="(300,80)" name="aiArith"/>
+    <comp lib="0" loc="(120,130)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Select"/>
+    </comp>
+    <comp loc="(330,170)" name="aiLogic"/>
+    <comp lib="0" loc="(120,70)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
   </circuit>
   <circuit name="aiArith">
     <a name="circuit" val="aiArith"/>
@@ -198,9 +219,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <path d="M80,55 Q96,77 110,55" fill="none" stroke="#808080" stroke-width="2"/>
       <rect fill="none" height="65" stroke="#000000" stroke-width="2" width="90" x="50" y="55"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="97" y="91">aiLogic</text>
-      <circ-port height="8" pin="350,140" width="8" x="46" y="66"/>
-      <circ-port height="8" pin="120,160" width="8" x="46" y="96"/>
-      <circ-port height="8" pin="120,230" width="8" x="56" y="116"/>
+      <circ-port height="8" pin="350,140" width="8" x="66" y="116"/>
+      <circ-port height="8" pin="120,160" width="8" x="46" y="86"/>
+      <circ-port height="8" pin="120,230" width="8" x="46" y="66"/>
       <circ-port height="10" pin="820,290" width="10" x="135" y="65"/>
       <circ-anchor facing="east" height="6" width="6" x="137" y="67"/>
     </appear>
