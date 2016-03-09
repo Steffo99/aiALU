@@ -106,40 +106,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(610,80)" name="Probe">
       <a name="radix" val="10signed"/>
     </comp>
-    <comp lib="0" loc="(640,80)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="8"/>
-      <a name="label" val="Output"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(120,130)" name="Probe">
-      <a name="radix" val="10signed"/>
+    <comp lib="3" loc="(47,307)" name="Text">
+      <a name="text" val="101: !A"/>
     </comp>
     <comp lib="1" loc="(420,230)" name="NOT Gate"/>
-    <comp lib="3" loc="(76,229)" name="Text">
-      <a name="text" val="000: A + B"/>
+    <comp lib="3" loc="(61,259)" name="Text">
+      <a name="text" val="010: A &amp; B"/>
     </comp>
     <comp loc="(300,80)" name="aiArith"/>
-    <comp loc="(580,150)" name="MUX8data"/>
-    <comp loc="(330,170)" name="aiLogic"/>
-    <comp lib="0" loc="(120,70)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
-    </comp>
-    <comp lib="1" loc="(420,220)" name="NOT Gate"/>
     <comp lib="0" loc="(120,100)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
       <a name="label" val="B"/>
     </comp>
-    <comp lib="0" loc="(110,200)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Select"/>
-    </comp>
-    <comp lib="3" loc="(75,244)" name="Text">
+    <comp lib="3" loc="(57,245)" name="Text">
       <a name="text" val="001: A - B"/>
     </comp>
     <comp lib="0" loc="(580,220)" name="Bit Extender">
@@ -152,6 +132,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Overflow"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="3" loc="(46,320)" name="Text">
+      <a name="text" val="110: !B"/>
+    </comp>
     <comp lib="0" loc="(120,190)" name="Splitter">
       <a name="fanout" val="1"/>
       <a name="incoming" val="3"/>
@@ -162,14 +145,49 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(120,40)" name="Probe">
-      <a name="radix" val="10signed"/>
-    </comp>
     <comp lib="0" loc="(370,240)" name="Splitter">
       <a name="incoming" val="3"/>
       <a name="bit0" val="none"/>
       <a name="bit1" val="0"/>
       <a name="bit2" val="1"/>
+    </comp>
+    <comp lib="0" loc="(640,80)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="label" val="Output"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(120,130)" name="Probe">
+      <a name="radix" val="10signed"/>
+    </comp>
+    <comp lib="3" loc="(58,292)" name="Text">
+      <a name="text" val="100: A xor B"/>
+    </comp>
+    <comp loc="(580,150)" name="MUX8data"/>
+    <comp loc="(330,170)" name="aiLogic"/>
+    <comp lib="0" loc="(120,70)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="1" loc="(420,220)" name="NOT Gate"/>
+    <comp lib="3" loc="(58,273)" name="Text">
+      <a name="text" val="011: A | B"/>
+    </comp>
+    <comp lib="3" loc="(60,231)" name="Text">
+      <a name="text" val="000: A + B"/>
+    </comp>
+    <comp lib="0" loc="(110,200)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Select"/>
+    </comp>
+    <comp lib="3" loc="(45,334)" name="Text">
+      <a name="text" val="111: 0"/>
+    </comp>
+    <comp lib="0" loc="(120,40)" name="Probe">
+      <a name="radix" val="10signed"/>
     </comp>
   </circuit>
   <circuit name="aiArith">
@@ -1133,7 +1151,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <appear>
       <path d="M61,54 Q64,67 68,57" fill="none" stroke="#808080" stroke-width="2"/>
       <polygon fill="none" points="50,50 50,110 80,100 80,60" stroke="#000000" stroke-width="2"/>
-      <polygon fill="none" points="53,55 53,106 77,98 77,63" stroke="#000000"/>
+      <text font-family="SansSerif" font-size="20" text-anchor="middle" x="65" y="88">8</text>
       <circ-port height="8" pin="100,40" width="8" x="46" y="56"/>
       <circ-port height="8" pin="100,70" width="8" x="46" y="66"/>
       <circ-port height="8" pin="100,100" width="8" x="46" y="76"/>
